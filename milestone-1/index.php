@@ -1,5 +1,6 @@
 <?php 
-    require __DIR__ . '/db/data.php'
+    require __DIR__ . '/db/data.php';
+    
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,9 @@
             <div>
                 <select name="select" id="select" v-model="selected">
                     <option value="" disabled selected>Select your option</option>
-
+                    <?php foreach($genres as $genre){ ?>
+                       <option value=""><?= $genre ?></option> 
+                   <?php } ?>
                 </select>
             </div>
         </header>

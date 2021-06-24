@@ -70,4 +70,11 @@ $data = [
         "genre"=> "Pop",
         "year"=> "1987"
     ]
-]
+    ];
+
+    $genres = [];
+    foreach($data as $album){
+        if(!in_array($album['genre'], $genres)){
+            $genres[] = $album['genre'];
+        }
+    }
