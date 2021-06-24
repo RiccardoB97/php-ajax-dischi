@@ -10,20 +10,25 @@
 var app = new Vue({
   el: '#app',
   data: {
-    response: []
+    response: [],
+    genres: []
   },
   mounted: function mounted() {
     var _this = this;
 
     axios.get('./api/data.php').then(function (response) {
       _this.response = response.data;
-      console.log(_this.response);
+
+      _this.response.forEach(function (album) {
+        if (!_this.genres.includes(album.genre)) {
+          _this.genres.push(album.genre);
+        }
+      });
     })["catch"](function (e) {
       console.error(e);
     });
   }
 });
-console.log('ciao');
 
 /***/ }),
 

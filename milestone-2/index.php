@@ -19,7 +19,7 @@
 <div id="app">
     <header id='site_header'>
         <div class="logo">
-            <img src="./assets/img/spotify-logo-png-7053.png" alt="">
+            <img src="dist/img/spotify-logo-png-7053.png" alt="">
         </div>
         <div>
             <select name="selectedGenre">

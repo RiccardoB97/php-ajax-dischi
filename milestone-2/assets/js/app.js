@@ -2,18 +2,22 @@ const app = new Vue({
     el: '#app',
     data: {
         response: [],
+        genres: [],
     },
     mounted() {
         axios
             .get('./api/data.php')
             .then(response => {
                 this.response = response.data;
-                console.log(this.response);
+                this.response.forEach(album => {
+                    if (!this.genres.includes(album.genre)) {
+                        this.genres.push(album.genre)
+                    }
+                });
             })
             .catch(e => {
                 console.error(e);
             })
+
     }
 })
-
-console.log('ciao');
