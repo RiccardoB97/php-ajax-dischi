@@ -1,6 +1,5 @@
 <?php 
     require __DIR__ . '/db/data.php';
-    $selectOption = $_POST['selectedGenre'];
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +12,7 @@
     <!-- Font Awesome ling -->
     <script src="https://kit.fontawesome.com/1d47f7a9f5.js" crossorigin="anonymous"></script>
     <!-- Main CSS file -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="dist/css/app.css">
 </head>
 
 <body>
@@ -58,9 +57,9 @@
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Vue JS-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- Main JS file -->
-    <script src="./assets/js/app.js"></script>
+    <script src="dist/js/app.js"></script>
 </body>
 
 </html>
