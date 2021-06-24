@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<div id="app">
     <header id='site_header'>
         <div class="logo">
             <img src="./assets/img/spotify-logo-png-7053.png" alt="">
@@ -50,18 +51,16 @@
         <?php }
         }
     ?>
-            
-            
-        
     </main>
+</div>
     <!-- AJAX Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Vue JS-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- Main JS file -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

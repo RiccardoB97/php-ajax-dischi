@@ -13,7 +13,7 @@
     <!-- Font Awesome ling -->
     <script src="https://kit.fontawesome.com/1d47f7a9f5.js" crossorigin="anonymous"></script>
     <!-- Main CSS file -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="dist/css/app.css">
 </head>
 
 <body>
