@@ -22,7 +22,7 @@
             <img src="./assets/img/spotify-logo-png-7053.png" alt="">
         </div>
         <div>
-            <select name="select" id="select" v-model="selected">
+            <select name="select" id="select">
                 <option value="" disabled selected>Select your option</option>
                 <?php foreach($genres as $genre){ ?>
                     <option value=""><?= $genre ?></option> 
@@ -40,17 +40,18 @@
                     </div>
                     <img src="<?= $album["poster"] ?>" alt="">
                 </div>
+                <h2><?= $album['title']?></h2>
+                <div class="album_info">
+                    <h4><?= $album["author"] ?></h4>
+                    <h4><?= $album['year'] ?></h4>
+                </div>
             </div>
         <?php }
     ?>
         
             <!-- v-if="selected === album.genre || selected === 'All' || selected ==='' "> -->
             
-            <h2>{{album.title.toUpperCase()}}</h2>
-            <div class="album_info">
-                <h4>{{album.author}}</h4>
-                <h4>{{album.year}}</h4>
-            </div>
+            
         
     </main>
 
